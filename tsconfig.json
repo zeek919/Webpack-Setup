@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules",
+                "options": {
+                    "customMatcher": "\\.m\\.css$",
+                    "camelCase": "dashes"
+                }
+            }
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
